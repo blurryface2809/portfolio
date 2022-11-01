@@ -1,0 +1,97 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.page-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;   
+}
+
+li{
+    list-style: none;
+    margin-top: 6px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+header{
+    color: #666666;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 55px;
+}
+
+.logo{
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-de-navegacao{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    width: 610px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+
+.menu-de-navegacao a {
+    padding: 4px 8px;
+}
+
+.menu-de-navegacao a:hover {
+    background-color: lightgrey;
+}
+
+.redes-sociais {
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    min-height: calc(100vh - 55px); 
+    display: flex;
+    align-items: center;
+}
+
+.apresentacao {
+    flex-grow: 1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    color: #42446e;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gradiente {
+    background-image: linear-gradient(to right, #c21500, #ffc500);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.imagem-do-perfil {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    
+}
