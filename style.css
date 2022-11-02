@@ -3,12 +3,31 @@
     padding:0;
     margin:0;
     box-sizing: border-box;
+    
 }
 
 .page-wrapper {
     width: 1200px;
-    margin: 0 auto;
+    margin: 10px auto;
 }
+
+body{
+    background: linear-gradient(to right, #ffd6f8, #e2f5ff);
+
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px #fa11c4;
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: #febeef;
+    outline: 1px solid #fd95e5;
+  }
 
 /* ================ HEADER ================ */
 
@@ -53,18 +72,19 @@ header{
     width: 610px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-right: 50px;
+    justify-content: space-evenly;
+    margin-right: 10px;
+    
     
 }
 
 .menu-de-navegacao a {
     padding: 4px 8px;
-
 }
 
 .menu-de-navegacao a:hover {
-    background-color: lightgrey;
+    background-color: rgb(255, 207, 254);
+    border-radius: 4px;
 }
 
 .redes-sociais {
@@ -74,10 +94,10 @@ header{
     justify-content: space-between;
 }
 
-/* ================ HOME ================ */
+/* ================ HOME (index.html) ================ */
 
 main {
-    min-height: calc(100vh - 55px); 
+    min-height: calc(100vh - 75px); 
     display: flex;
     align-items: center;
 }
@@ -92,7 +112,7 @@ main {
 }
 
 .gradiente {
-    background-image: linear-gradient(to right, #c21500, #ffc500);
+    background-image: linear-gradient(to right, #0088c2, #ff5e00);
     color: black;
     background-clip: text;
     -webkit-background-clip: text;
@@ -102,17 +122,17 @@ main {
 
 .imagem-do-perfil {
     border-radius: 50%;
-    height: 300px;
-    width: 300px;
+    height: 320px;
+    width: 320px;
     
 }
 
-/* ================ ABOUT ================ */
+/* ================ ABOUT (about.html) ================ */
 
 .section-about {
     font-family: 'Poppins', sans-serif;
     min-height: calc(100vh - 55px);
-    width: 860px;
+    width: 900px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -158,7 +178,7 @@ html body .section-about-time-tag {
     align-items: center;
     justify-content: center;
 
-    box-shadow: 0px 4px 4px 0px rgba(102,102,102,1);
+    box-shadow: 0px 0px 13px 4px rgba(79,249,255,1);
 }
 
 .section-about p {
@@ -173,9 +193,150 @@ html body .section-about-time-tag {
 }
 
 .content-work {
-    width: 360px;
+    width: 560px;
 }
 
 .content-data {
     margin-left: auto;
+}
+
+/* ================ TECH STACK (stack.html) ================ */
+
+.section-stack {
+    font-family: 'Poppins', sans-serif;
+    min-height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.section-stack h1 {
+    font-size: 36px;
+    color: #20a8ad;
+    margin-bottom: 26px;
+}
+
+.section-stack p {
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+.section-stack-icons {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 900px;
+}
+
+.section-stack-icons p{
+    justify-self: center;
+    color:#a4a4a4;
+    font-size: 14px;
+    justify-content: space-between;
+    margin-top: 54px;
+}
+
+.section-stack-icons img{
+    justify-self: center;
+    justify-content: space-between;
+
+}
+
+span{
+    justify-items: center;
+}
+
+/* ================ PROJECTS (projects.html) ================ */
+
+.section-projects {
+    font-family: 'Poppins', sans-serif;
+    min-height: calc(100vh - 55px);
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+
+.section-projects-intro {
+    margin-bottom: 50px;
+}
+
+.section-projects h1 {
+    font-size: 36px;
+    color: #20a8ad;
+    margin: 32px 0;
+}
+
+.section-projects p {
+    font-size: 18px;
+    color: #666666;
+}
+
+.section-projects-cards-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.project-card {
+    overflow: hidden;
+    width: 375px;
+    background-color: #fbeddd;
+    border-radius: 20px;
+    margin-top: 48px;
+    box-shadow: 0px 0px 30px 4px rgba(79,249,255,1);
+
+}
+
+.project-card-content {
+    padding: 24px;
+    padding-bottom: calc(24px - 7px);
+    transform: translateY(-7px);
+}
+
+.project-card h2 {
+    font-weight: 500;
+    font-size: 28px;
+    margin-bottom: 8px 0;
+}
+
+.project-card p {
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.project-card-content .project-card-content-stacks {
+    color: #42446e;
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.project-card-content-stacks span {
+    font-weight: 400;
+    font-stretch: condensed ;
+}
+
+.project-card-links {
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    text-decoration: underline;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-card-links a {
+    display: flex;
+    align-items: center;
+}
+
+.project-card-links a img {
+    margin-right: 10px;
 }
